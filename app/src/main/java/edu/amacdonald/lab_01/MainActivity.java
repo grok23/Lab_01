@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         image.setImageResource(R.drawable.notimposterbackground1);
 
         Toast toast= Toast.makeText(getApplicationContext(),
-                name + ", was not the imposter!", Toast.LENGTH_SHORT);
+                name + ", was not the impostor!", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0, 0);
         toast.show();
 

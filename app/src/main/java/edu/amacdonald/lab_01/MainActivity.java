@@ -1,5 +1,4 @@
 package edu.amacdonald.lab_01;
-
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.Gravity;
@@ -37,17 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         Toast toast= Toast.makeText(getApplicationContext(),
                 name + ", was not the imposter!", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, -600);
+        toast.setGravity(Gravity.TOP, 0, 0);
         toast.show();
-        //Toast toast = new Toast(getApplicationContext());
-        //toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-        //Toast.makeText(this, name + ", was not the imposter!",Toast.LENGTH_LONG).show();
 
-
-        //Toast.makeText(this, name + ", was not the imposter!", Toast.LENGTH_LONG).show();
-        //usersName.getText().clear();
-
-        //set countdown timer for 4 seconds to change the image back in ImageView
         new CountDownTimer(4000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
